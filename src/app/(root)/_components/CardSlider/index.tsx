@@ -5,16 +5,10 @@ type CardSliderDataProps = {
   heading: string;
 };
 
-type CardSliderProps = {
-  data: CardSliderDataProps[];
-};
-
-export const CardSlider: React.FC<CardSliderProps> = ({ data }) => {
+export const CardSlider = () => {
   return (
     <div className="flex w-[1200px] overflow-x-scroll">
-      {data.map(() => (
-        <SliderCard />
-      ))}
+      <SliderCard />
     </div>
   );
 };

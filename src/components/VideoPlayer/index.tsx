@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import { useRef } from "react";
 
@@ -7,6 +8,7 @@ export const VideoPlayer: React.FC<indexProps> = () => {
   const vidoeRef = useRef();
 
   const playVideo = () => {
+    // @ts-ignore
     vidoeRef.current.play();
   };
 

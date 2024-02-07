@@ -14,7 +14,7 @@ export default function Page() {
       {/* slider */}
       <Slider />
       {/* card slider */}
-      <CardSlider data={CardSliderData} />
+      <CardSlider />
       {/* container */}
       <div className="px-4 py-6">
         {/* banner */}

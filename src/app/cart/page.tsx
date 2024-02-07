@@ -45,14 +45,6 @@ function Page() {
   return (
     <div>
       <h4>Games List</h4>
-      <ul>
-        {data.map((game) => (
-          <li key={game.id}>
-            <p>Title: {game.title}</p>
-            <p>Platform: {game.platform}</p>
-          </li>
-        ))}
-      </ul>
       <button onClick={handleGraphqlRequest}>Fetch Games</button>
     </div>
   );
